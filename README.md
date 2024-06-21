@@ -16,6 +16,33 @@ This miniature SIEM lab consists of the following components:
 
 ***This homelab is not like other homelabs as it will be quite short, consisting of a few basic steps. All parts of this lab can be done for free.***
 
+Before we can start, a free account must be made on Elastic Stack as this will host our SIEM, Logs, and dashboard
+- Go to https://cloud.elastic.co/registration and create and account to start your free trial
+- Next, choose “Create Deployment” button and select “Elasticsearch” as the deployment type.
+- Next, choose the parameters that fit your needs and hit “Create Deployment”
+- Once all the configurations are completed, hit continue
+
+Next, we can now build our Virtual Machines. Any Virtualization software and OS can be used for this Homelab, but for the purposes of this lab, I will be using Virtualbox and a Kali Linux Distribution.
+- To download a Kali Linux VM, go to https://www.kali.org/get-kali/#kali-virtual-machines and choose which one suits your need.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
