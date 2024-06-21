@@ -74,7 +74,6 @@ Nmap is an open-source tool that facilitates network exploration, management, an
 
 
 
-
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
