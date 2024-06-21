@@ -34,7 +34,21 @@ In order to collect Logs from our Kali Linux VM, we will need to utilise an Elas
 - Go to the Elastic Home page and at the left top corner, select the menu bar and at the bottom, select "+ Add Integration" button in blue
   
   ![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/4a2ea9b5-0e64-4a56-9f52-6c33dc9317cf)
-- Next, 
+
+- Next, you must click Elastic Defend and at the bottom, select "Install Elastic Defend"
+
+You should eventually reach this page
+
+![Install Elastic agent on host](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/9cceecd0-0759-47f1-a264-375f77aca669)
+
+- Depending on which VM you chose, select which one suits you, for this lab, I used Kali Linux so I will copy the command in the above image.
+- Once copied, head over to you Kali VM and open up the terminal which is at the top of the screen.
+- In terminal, paste your command and hit enter.
+- It may ask you the password so type "kali"
+- Once installed, you should be at this screen
+
+![Elastic agent successfully installed onto kali linux](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/5c27bcd1-666d-4070-ad1c-39191afac0ad)
+
 
 
 
