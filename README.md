@@ -49,7 +49,15 @@ You should eventually reach this page
 
 ![Elastic agent successfully installed onto kali linux](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/5c27bcd1-666d-4070-ad1c-39191afac0ad)
 
+If you would like to verify whether the agent was successfully installed, you can paste the following command into the terminal: 
+sudo systemctl status elastic-agent.service
 
+
+![check if elastic agent is installed on to kali linux](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/59f673bf-104e-478a-b892-ac952b1ca5df)
+
+Now that everything is up and running, to verify the agent is working as intended, we can now generate some security events on the Kali Linux VM. If it works, we should be able to see these events as Logs within the Elastic stack SIEM. There are a number of ways to do this, but for the sake of this lab, we will be utilising nmap. 
+
+Nmap is an open-source tool that facilitates network exploration, management, and security assessments. It identifies devices and services within a network, effectively mapping the network structure. Nmap performs scans to detect open ports, ascertain the operating systems and applications in use on target systems, and gather various network-related details.
 
 
 
