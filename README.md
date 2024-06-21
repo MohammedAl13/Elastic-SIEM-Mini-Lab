@@ -59,6 +59,8 @@ Now that everything is up and running, to verify the agent is working as intende
 
 Nmap is an open-source tool that facilitates network exploration, management, and security assessments. It identifies devices and services within a network, effectively mapping the network structure. Nmap performs scans to detect open ports, ascertain the operating systems and applications in use on target systems, and gather various network-related details.
 
+-With Kali Linux, nmap comes already pre-installed, so if you are using a different VM, you may be required to install it. Paste this into terminal to install nmap if you need to: sudo apt-get install nmap
+-
 
 
 
