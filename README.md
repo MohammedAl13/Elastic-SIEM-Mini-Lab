@@ -30,6 +30,11 @@ Next, we can now build our Virtual Machines. Any Virtualization software and OS 
 
 **Note, if you face difficulty with installing the Kali Linux VM or setting up the virtualization software, either VMware or Virtualbox, there are a plethora of resources and tutorials on youtube which can easily be followed**
 
+In order to collect Logs from our Kali Linux VM, we will need to utilise an Elastic agent. An agent simply put is a tool that collects data from hosts and sends it to the Elastic Stack for monitoring and analysis. Thsi data will be security events collected by the agent and forwarded to the Elastic SIEM. To do this, you must do the following steps:
+- Go to the Elastic Home page and at the left top corner, select the menu bar and at the bottom, select "+ Add Integration" button in blue
+  
+  ![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/4a2ea9b5-0e64-4a56-9f52-6c33dc9317cf)
+- Next, 
 
 
 
