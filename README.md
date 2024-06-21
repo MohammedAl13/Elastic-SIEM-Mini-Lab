@@ -24,6 +24,11 @@ Before we can start, a free account must be made on Elastic Stack as this will h
 
 Next, we can now build our Virtual Machines. Any Virtualization software and OS can be used for this Homelab, but for the purposes of this lab, I will be using Virtualbox and a Kali Linux Distribution.
 - To download a Kali Linux VM, go to https://www.kali.org/get-kali/#kali-virtual-machines and choose which one suits your need.
+- Next, create a Kali Linux VM in your preffered virtualization software using the Kali linux file
+- Once the Kali VM is installed, click to start the virtual machine and you will go through a series of screens and prompts which you may need to fill some information
+- Once everything is complete, you will be asked to login, both the username and password is "kali"
+
+**Note, if you face difficulty with installing the Kali Linux VM or setting up the virtualization software, either VMware or Virtualbox, there are a plethora of resources and tutorials on youtube which can easily be followed**
 
 
 
