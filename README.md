@@ -59,8 +59,17 @@ Now that everything is up and running, to verify the agent is working as intende
 
 Nmap is an open-source tool that facilitates network exploration, management, and security assessments. It identifies devices and services within a network, effectively mapping the network structure. Nmap performs scans to detect open ports, ascertain the operating systems and applications in use on target systems, and gather various network-related details.
 
--With Kali Linux, nmap comes already pre-installed, so if you are using a different VM, you may be required to install it. Paste this into terminal to install nmap if you need to: sudo apt-get install nmap
--
+- With Kali Linux, nmap comes already pre-installed, so if you are using a different VM, you may be required to install it. Paste this into terminal to install nmap if you need to: sudo apt-get install nmap
+- Generating a security event using nmap can easily be done by simply typing this into the terminal: nmap -p- localhost
+
+  ![Generating first query using nmap](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/ae767aab-fe73-461d-a519-3a6bad75b067)
+
+- In addition to this, you can run a number of other nmap scans if you wish to generate a few more events which will be helpful when we look at the logs. You can paste into terminal: {"nmap -sS <ip address>”, 
+  “nmap -sT <ip address>”, “nmap -p- <ip address>”}
+- If you do not know the Ip address of your VM, this can easily be found using the "ifconfig" command in terminal.
+
+Once you have generated a number of events using nmap, we can now start analyzing all the logs collected in the Elastic SIEM.
+
 
 
 
