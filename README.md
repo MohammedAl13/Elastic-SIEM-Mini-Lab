@@ -69,6 +69,23 @@ Nmap is an open-source tool that facilitates network exploration, management, an
 - If you do not know the Ip address of your VM, this can easily be found using the "ifconfig" command in terminal.
 
 Once you have generated a number of events using nmap, we can now start analyzing all the logs collected in the Elastic SIEM.
+- To do this, you wil need to navigate to the menu bar and within it, scroll down to Observability, underwhich is the logs button. You should then reach a screen simmilar to this.
+
+![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/02c702a3-914d-4f87-86a2-818cdb275026)
+
+- These are all the logs you should be getting in your SIEM from your Kali VM
+- To see logs prtaining to nmap, you can type process.args: "nmap"
+
+***Now that you have your logs, it is time to build a Dashboard.***
+- To do this, click the menu bar and under the analytics section, select dashboard
+- Now select create dashboard and create visualization
+- On the right hand side, select the Visualization type as Bar vertical stacked, the vertical axis as Count and the horizontal axis as @timestamp.
+  
+  ![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/e9b738c7-398e-4c68-97e0-42c2cbe691a2)
+
+***You don't need to make the Visualization type as Bar vertical stack, it can be whatever you want it to be.***
+
+![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/de4ee174-59e6-4471-a8c1-bec7153eb4d6)
 
 
 
@@ -80,65 +97,6 @@ Once you have generated a number of events using nmap, we can now start analyzin
 
 
 
-
-
-
-
-
-## Metrics Before Hardening / Security Controls
-
-The following table shows the metrics we measured in our insecure environment for 24 hours:
-
-
-Start Time: 2023-12-18 08:20:09
-
-
-Stop Time:  2023-12-19 08:20:09
-
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 50656
-| Syslog                   | 943
-| SecurityAlert            | 5
-| SecurityIncident         | 26
-| AzureNetworkAnalytics_CL | 129482
-
-## Attack Maps After Hardening / Security Controls
-
-```All map queries returned no results due to no instances of malicious activity for the 24-hour period after hardening.```
-
-## Metrics After Hardening / Security Controls
-
-The following table shows the metrics I measured in my environment for another 24 hours after NIST 800-53 security controls were applied:
-
-
-Start Time: 2023-12-21 01:57:37
-
-
-Stop Time:  2023-12-22 01:57:37
-
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 12541
-| Syslog                   | 5
-| SecurityAlert            | 0
-| SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 0
-
-
-## Percentage of Security Events 
-
-
-The following table compares the security events from before hardening the environment vs afterward and shows to what percent were security events reduced:
-
-
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | -75.24%
-| Syslog                   | -99.47%
-| SecurityAlert            | -100%
-| SecurityIncident         | -100%
-| AzureNetworkAnalytics_CL | -100%
 
 
 
