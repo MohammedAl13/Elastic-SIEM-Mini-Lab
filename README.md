@@ -87,11 +87,27 @@ Once you have generated a number of events using nmap, we can now start analyzin
 
 ![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/de4ee174-59e6-4471-a8c1-bec7153eb4d6)
 
-The last part of this lab will be creating an alert. Alerts are an integral part of any SIEM as they are key in detecting specific security incidents and allowing a cybersecurity proffesional to respond to them in a timley fasion. In this lab, we wil create an alert in the Elastic SIEM to detect nmap scans. 
+The last part of this lab will be creating an alert. Alerts are an integral part of any SIEM as they are key in detecting specific security incidents and allowing a cybersecurity proffesional to respond to them in a timley fasion. In this lab, we wil create an alert in the Elastic SIEM to detect any nmap scans in the Kali VM. 
 
+- To do this, click the menu icon and under Security, click Alerts
+- Click on manage rules, then click on Create new rules
+- Under the Define new rules, select custom query.
+  
+![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/8d08f8ee-2bbb-48ca-af67-63f0e08af8cd)
 
+- Scroll down and under custom query, type this --> event.action: "nmap_scan"
 
+![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/abcbb0c3-0d78-4a32-a859-167b967741f2)
 
+- Next, in About rule, give your scan a name. Alert names should reflect the purpose of the Alert.
+- Also, since the purpose of this lab is to go nto some of the responsibilities of an actual SOC Analyst, we should also type a description of what this Alert is 
+  about in detail. In a proffessional enviroment, this is important because if another person comes, they should be able to understand quickly what the purpose is 
+  behind this Alert.
+- Next, assign a severity level to this rule, since this is the only rule we are making in this lab, I will be making it high.
+  
+![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/7c7f49a4-35ad-4ad6-8c4b-1d22fe15ea64)
+
+-
 
 
 
