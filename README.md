@@ -107,7 +107,7 @@ The last part of this lab will be creating an alert. Alerts are an integral part
   
 ![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/7c7f49a4-35ad-4ad6-8c4b-1d22fe15ea64)
 
-- Click continue, and now in schedule rule, you can keep all default settings. Clcik continue to next section.
+- Click continue, and now in schedule rule, you can keep all default settings. Clcik continue to next section. Teh one ro be
 - Finally in Rule action, you can select what to do when the rule is triggered. You can have an automatic message on slack, an email, etc. Choose whichever one is 
   convineant to you.
 - Lastly, click at the bottom, "create and enable rule"
@@ -116,9 +116,8 @@ Now whenever you run an nmap scan on the Kali VM, this alert should be triggered
 
 ## Conclusion
 
-In this project, a Kali Linux VM was made and utilizing Elastic Stack, we created an agent and installed it onto the Kali Linux VM. The agent forwarded logs and security events from the Kali VM to Elastic Stack's SIEM, where the logs were collected to be analyzed. Next, nmap scans in the Kali VM were done to generate some security events to be analyzed. Using the collected logs, a dashboard was also made to view our findings. Lastly, a custom Alert was created notifying whenever an Nmap scan was conducted on the Kali VM.
+In this project, a Kali Linux Virtual Machine was made and utilizing Elastic Stack, we integrated an agent onto the Kali Linux VM. The agent forwarded logs and security events from the Kali VM to Elastic Stack's SIEM where the logs were collected to be analyzed. Next, nmap scans in the Kali VM were done to generate some security events to be analyzed. Using the collected logs, a dashboard was also made to view our findings. Lastly, a custom Alert was created notifying whenever an Nmap scan was conducted on the Kali VM.
 
 ## Next Steps
 
-This project can greatly be expanded in various different ways. For starters, more logs can be generated, ot just from nmap, but from failed logins, successful logins, and remote logins. Next a different VM could be made registered in a forign country and could be used to simulate a forign attack which would generate quite a number of logs and instead of just 
-
+This project can greatly be expanded in various different ways. For starters, more logs can be generated, not just from nmap, but from failed logins, successful logins, and remote logins. Next a different VM could be made, and registered in a forign country, and could be used to simulate a forign attack which would generate quite a number of logs and would make for an intresting dashboard as we could see the world map and see where attacks are coming from. Another way to further explore this lab is by disabling the firewalls of the Kali VM and exposing it entirely to the internet. Then using vulnerability management we can see all the threats and we could then do incident response and harden the system using NIST 800-53 and compare a before and after. These are just a few sugestions one can implement to maximise there learning expereince from this lab.
