@@ -26,7 +26,7 @@ Next, we can now build our Virtual Machines. Any Virtualization software and OS 
 - To download a Kali Linux VM, go to https://www.kali.org/get-kali/#kali-virtual-machines and choose which works best for you.
 - Next, create a Kali Linux VM in your preferred virtualization software using the Kali Linux file
 - Once the Kali VM is installed, click to start the virtual machine, and you will go through a series of screens and prompts, which you may need to fill in some information
-- Once everything is complete, you will be asked to log in, both the username and password are "kali"
+- Once everything is complete, you will be asked to log in. Both the username and password are "kali"
 
 **Note, if you face difficulty with installing the Kali Linux VM or setting up the virtualization software, either VMware or Virtualbox, there are a plethora of resources and tutorials on YouTube which can easily be followed**
 
@@ -37,7 +37,7 @@ To collect Logs from our Kali Linux VM, we will need to utilize an Elastic agent
 
 - Next, you must click Elastic Defend and at the bottom, select "Install Elastic Defend"
 
-You should eventually reach this page
+- You should eventually reach this page
 
 ![Install Elastic agent on host](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/9cceecd0-0759-47f1-a264-375f77aca669)
 
