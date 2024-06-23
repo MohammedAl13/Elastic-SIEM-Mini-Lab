@@ -107,15 +107,18 @@ The last part of this lab will be creating an alert. Alerts are an integral part
   
 ![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/7c7f49a4-35ad-4ad6-8c4b-1d22fe15ea64)
 
--
+- Click continue, and now in schedule rule, you can keep all default settings. Clcik continue to next section.
+- Finally in Rule action, you can select what to do when the rule is triggered. You can have an automatic message on slack, an email, etc. Choose whichever one is 
+  convineant to you.
+- Lastly, click at the bottom, "create and enable rule"
 
-
-
-
-
-
-
+Now whenever you run an nmap scan on the Kali VM, this alert should be triggered and if you set up a notification method, you should be notified of this alert being set off.
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure, and log sources were integrated into a Log Analytics workspace. The firewalls and NSGs for the VMS were disabled, leaving them exposed to the public internet. Microsoft Sentinel was then employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. NIST 800-53 security controls were implemented to harden the environment. It is noteworthy that the number of security events and incidents were drastically reduced after the NIST 800-53 security controls were applied, demonstrating their effectiveness.
+In this project, a Kali Linux VM was made and utilizing Elastic Stack, we created an agent and installed it onto the Kali Linux VM. The agent forwarded logs and security events from the Kali VM to Elastic Stack's SIEM, where the logs were collected to be analyzed. Next, nmap scans in the Kali VM were done to generate some security events to be analyzed. Using the collected logs, a dashboard was also made to view our findings. Lastly, a custom Alert was created notifying whenever an Nmap scan was conducted on the Kali VM.
+
+## Next Steps
+
+This project can greatly be expanded in various different ways. For starters, more logs can be generated, ot just from nmap, but from failed logins, successful logins, and remote logins. Next a different VM could be made registered in a forign country and could be used to simulate a forign attack which would generate quite a number of logs and instead of just 
+
