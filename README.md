@@ -87,7 +87,7 @@ Once you have generated a number of events using nmap, we can now start analyzin
 
 ![image](https://github.com/MohammedAl13/Elastic-SIEM-Mini-Lab/assets/154714127/de4ee174-59e6-4471-a8c1-bec7153eb4d6)
 
-
+The last part of this lab will be creating an alert. Alerts are an integral part of any SIEM as they are key in detecting specific security incidents and allowing a cybersecurity proffesional to respond to them in a timley fasion. In this lab, we wil create an alert in the Elastic SIEM to detect nmap scans. 
 
 
 
